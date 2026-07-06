@@ -1454,7 +1454,7 @@ ul {
     width: 110%;
     max-height: 1000px;
     object-fit: contain;
-    transform: scale(1.7);
+    transform: scale(1.7) translateX(40%);
     transform-origin: bottom right;
 }
 
@@ -1683,7 +1683,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 28px 0;
+    padding: 16px 0 50px; /* sus 16px, jos 50px - le împinge mai sus */
 }
 
 .footer__bottom p {
