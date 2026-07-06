@@ -1516,7 +1516,7 @@ ul {
 }
 
 .faq__visual img {
-    width: 135%;
+    width: 160%;
     max-height: 800px;
     object-fit: contain;
     transform: translateX(-15%);
