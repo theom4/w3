@@ -1113,7 +1113,7 @@ ul {
 .screen-dots {
     display: flex;
     gap: 6px;
-    padding: 14px 18px;
+    padding: 8px 14px;
     background: #1a1a1a;
     border-bottom: 1px solid #333;
 }
