@@ -76,6 +76,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
+    overflow-x: hidden;
 }
 
 body {
@@ -261,9 +262,9 @@ ul {
     padding: 8px 12px 8px 28px;
     max-width: var(--container-width);
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     border-radius: var(--radius-full);
     border: 1px solid var(--color-dim-grey);
     box-shadow:
@@ -272,7 +273,7 @@ ul {
 }
 
 .header--scrolled .header__pill {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.65);
     border-color: var(--color-bg-grey);
     box-shadow:
         0 4px 24px rgba(0, 0, 0, 0.06);
@@ -744,7 +745,7 @@ ul {
 /* Dashboard Preview */
 .hero__dashboard-preview {
     position: relative;
-    margin-top: 60px;
+    margin-top: 20px;
     max-width: 1100px;
     width: 100%;
     animation: fadeInUp 1s ease-out 1s both;
@@ -769,8 +770,8 @@ ul {
     aspect-ratio: 16 / 9;
     object-fit: cover;
     border-radius: var(--radius-xl);
-    box-shadow: var(--shadow-xl);
-    border: 1.5px solid var(--color-dim-grey);
+    box-shadow: var(--shadow-glow);
+    border: 3px solid var(--color-primary);
 }
 
 
@@ -1454,8 +1455,8 @@ ul {
     width: 110%;
     max-height: 1000px;
     object-fit: contain;
-    transform: scale(1.7) translateX(40%);
-    transform-origin: bottom right;
+    transform: translateY(-15%) translateX(40%) rotate(90deg) scale(2.45);
+    transform-origin: center center;
 }
 
 
@@ -1633,8 +1634,7 @@ ul {
     display: grid;
     grid-template-columns: 1.3fr 2fr;
     gap: 80px;
-    padding-bottom: 60px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 0;
 }
 
 .footer__brand .header__logo {
