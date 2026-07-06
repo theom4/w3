@@ -1039,11 +1039,74 @@ ul {
     flex-shrink: 0;
 }
 
+/* MacBook Mockup */
+.macbook {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    perspective: 1000px;
+}
+
+.macbook__screen {
+    position: relative;
+    background: #000;
+    border-radius: 20px 20px 0 0;
+    padding: 3% 3% 4%;
+    box-shadow: inset 0 0 0 2px #222, 0 10px 30px rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+.macbook__camera {
+    position: absolute;
+    top: 1.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    background: #333;
+    border-radius: 50%;
+}
+
+.macbook__base {
+    position: relative;
+    width: 115%;
+    left: -7.5%;
+    height: 14px;
+    background: linear-gradient(to bottom, #e2e4f0, #a0a0a0);
+    border-radius: 0 0 16px 16px;
+    z-index: 1;
+    box-shadow: inset 0 1px 1px rgba(255,255,255,0.8), 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.macbook__base::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 2px 2px 0 0;
+}
+
+.macbook__base-notch {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15%;
+    height: 5px;
+    background: #b0b0b0;
+    border-radius: 0 0 4px 4px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
+}
+
 .demo__screen {
     background: #111;
-    border-radius: var(--radius-xl);
+    border-radius: 4px;
     overflow: hidden;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+    position: relative;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -1068,6 +1131,7 @@ ul {
 
 .demo__screen img {
     width: 100%;
+    display: block;
 }
 
 
