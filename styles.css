@@ -1516,9 +1516,10 @@ ul {
 }
 
 .faq__visual img {
-    width: 85%;
+    width: 120%;
     max-height: 800px;
     object-fit: contain;
+    transform: translateX(-15%);
 }
 
 
