@@ -1279,7 +1279,7 @@ ul {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 120px;
+    width: 250px;
     z-index: 2;
     pointer-events: none;
 }
@@ -1636,18 +1636,23 @@ ul {
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    padding: 16px 36px;
+    padding: 6px 6px 6px 28px;
     background: linear-gradient(135deg, #a8e050 0%, #d6fc52 60%, #b8f540 100%);
     border: none;
     border-radius: 999px;
     color: #0a1a00;
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
     box-shadow: 0 2px 16px rgba(168, 224, 80, 0.4);
+}
+
+.btn--glow-pill .audit-btn__circle {
+    width: 36px;
+    height: 36px;
 }
 
 .btn--glow-pill:hover {
