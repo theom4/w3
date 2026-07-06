@@ -1516,11 +1516,9 @@ ul {
 }
 
 .faq__visual img {
-    width: 110%;
-    max-height: 1000px;
+    width: 85%;
+    max-height: 800px;
     object-fit: contain;
-    transform: translateY(-15%) translateX(40%) rotate(90deg) scale(2.45);
-    transform-origin: center center;
 }
 
 
