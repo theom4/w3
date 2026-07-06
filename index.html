@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nanoassist — Consultanță AI de top pentru afacerea ta. Automatizare inteligentă, analiză avansată și soluții personalizate bazate pe inteligență artificială.">
+    <meta name="keywords" content="consultanță AI, inteligență artificială, automatizare, Nanoassist, România, soluții AI">
+    <title>Nanoassist — Consultanță AI pentru Afaceri</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ============ HEADER ============ -->
+    <header class="header" id="header">
+        <div class="header__pill">
+            <a href="#" class="header__logo" id="logo">
+                <img src="assets/images/logo1.png" alt="Nanoassist Logo" class="header-logo-img">
+                <span class="logo-text">Nanoassist</span>
+            </a>
+
+            <nav class="header__nav" id="nav">
+                <a href="#despre" class="nav-link">Despre noi</a>
+                <div class="nav-item-dropdown">
+                    <a href="#servicii" class="nav-link">Produse <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="margin-left: 2px; vertical-align: middle; transition: transform 0.2s;"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                    <div class="dropdown-menu">
+                        <a href="#ecommerce">Ecommerce</a>
+                        <a href="#call-center">Call-Center</a>
+                        <a href="#prospectare">Prospectare B2B</a>
+                        <a href="#reactivare">Reactivare Baza Clienti</a>
+                    </div>
+                </div>
+                <a href="#rezultate" class="nav-link">Rezultate</a>
+                <a href="#testimoniale" class="nav-link">Testimoniale</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header__actions">
+                <a href="https://comenzi.voisero.info" class="header__cta header__cta--secondary" id="cta-dashboard" target="_blank" rel="noopener noreferrer">
+                    <span>Dashboard</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path d="M2.5 11.5L11.5 2.5M11.5 2.5H5M11.5 2.5V9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="header__cta header__cta--audit" id="cta-audit">
+                    <span>Vreau Audit AI</span>
+                    <span class="audit-btn__circle">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path d="M2.5 11.5L11.5 2.5M11.5 2.5H5M11.5 2.5V9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+
+            <button class="header__hamburger" id="hamburger" aria-label="Deschide meniul">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="#despre" class="mobile-nav__link">Despre noi</a>
+        <a href="#servicii" class="mobile-nav__link">Servicii</a>
+        <a href="#rezultate" class="mobile-nav__link">Rezultate</a>
+        <a href="#testimoniale" class="mobile-nav__link">Testimoniale</a>
+        <a href="#faq" class="mobile-nav__link">FAQ</a>
+        <a href="#contact" class="mobile-nav__link">Contact</a>
+        <a href="#" class="mobile-nav__cta">Accesează Dashboard →</a>
+    </div>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <div class="hero__shape hero__shape--1"></div>
+            <div class="hero__shape hero__shape--2"></div>
+            <div class="hero__shape hero__shape--3"></div>
+            <div class="hero__particles" id="particles"></div>
+        </div>
+
+        <div class="hero__container">
+
+            <h1 class="hero__title">
+                Crește-ți vânzările cu sisteme <span class="hero__title-ai"><span class="ai-icon">AI</span></span> predictibile
+            </h1>
+
+            <p class="hero__subtitle">
+                Optimizeaza-ti procesele afacerii tale prin agenti AI autonomi
+            </p>
+
+            <div class="hero__actions">
+                <a href="#contact" class="btn btn--hero-audit" id="cta-start">
+                    <span>Programează Audit AI</span>
+                    <span class="audit-btn__circle audit-btn__circle--dark">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path d="M2.5 11.5L11.5 2.5M11.5 2.5H5M11.5 2.5V9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero__dashboard-preview">
+            <div class="dashboard-glow"></div>
+                        <iframe src="https://www.youtube.com/embed/8zaC7YM-LNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" class="dashboard-img"></iframe>
+        </div>
+    </section>
+
+    <!-- ============ CLIENTS ============ -->
+    <section class="clients" id="clienti">
+        <div class="clients__container">
+            <p class="clients__label">Recomandat de 23 de antreprenori din Europa:</p>
+            <div class="clients__track-wrapper">
+                <div class="clients__track">
+                    <div class="client-logo">TechVision</div>
+                    <div class="client-logo">DataFlow</div>
+                    <div class="client-logo">CloudNine</div>
+                    <div class="client-logo">SynthAI</div>
+                    <div class="client-logo">NexGen</div>
+                    <div class="client-logo">Quantiva</div>
+                    <div class="client-logo">Optimus</div>
+                    <div class="client-logo">InnoTech</div>
+                    <!-- Duplicate for seamless scroll -->
+                    <div class="client-logo">TechVision</div>
+                    <div class="client-logo">DataFlow</div>
+                    <div class="client-logo">CloudNine</div>
+                    <div class="client-logo">SynthAI</div>
+                    <div class="client-logo">NexGen</div>
+                    <div class="client-logo">Quantiva</div>
+                    <div class="client-logo">Optimus</div>
+                    <div class="client-logo">InnoTech</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ STATS / RESULTS ============ -->
+    <section class="stats" id="rezultate">
+        <div class="stats__container">
+            <div class="stats__header">
+                <span class="section-tag">Rezultate</span>
+                <h2 class="section-title">Decizii mai inteligente <br>încep cu date clare</h2>
+            </div>
+
+            <div class="stats__grid">
+                <div class="stat-card stat-card--featured" id="stat-featured">
+                    <div class="stat-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M14 3.5V24.5M14 3.5L7 10.5M14 3.5L21 10.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="stat-card__number" data-target="120">0</div>
+                    <div class="stat-card__suffix">+</div>
+                    <p class="stat-card__desc">Colaborări cu lideri din industria AI și cloud</p>
+                </div>
+
+                <div class="stat-card stat-card--light" id="stat-commitment">
+                    <span class="stat-card__label">Angajament măsurabil</span>
+                    <div class="stat-card__number" data-target="100">0</div>
+                    <div class="stat-card__suffix">%</div>
+                    <div class="stat-card__avatars">
+                        <div class="avatar" style="background: linear-gradient(135deg, #667eea, #764ba2);">A</div>
+                        <div class="avatar" style="background: linear-gradient(135deg, #f093fb, #f5576c);">B</div>
+                        <div class="avatar" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">C</div>
+                        <div class="avatar" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">D</div>
+                    </div>
+                    <blockquote class="stat-card__quote">
+                        „Strategia lor de automatizare ne-a transformat complet modul de lucru. Eficient, inteligent și fără cusur."
+                    </blockquote>
+                </div>
+
+                <div class="stat-card stat-card--accent" id="stat-datapoints">
+                    <span class="stat-card__label">Puncte de Date</span>
+                    <div class="stat-card__number" data-target="520">0</div>
+                    <div class="stat-card__suffix">k+</div>
+                    <p class="stat-card__desc">Analizate lunar pentru strategii de afaceri mai inteligente.</p>
+                </div>
+
+                <div class="stat-card stat-card--dark" id="stat-continents">
+                    <span class="stat-card__label">Continente</span>
+                    <div class="stat-card__number" data-target="20">0</div>
+                    <div class="stat-card__suffix">+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ DASHBOARD DEMO ============ -->
+    <section class="demo" id="demo">
+        <div class="demo__container">
+            <div class="demo__text">
+                <span class="section-tag">Demo Live</span>
+                <h2 class="section-title">Toate datele agentului<br>într-un dashboard</h2>
+                <p class="demo__description">
+                    Iei decizii dupa statistici. Nu haotic.
+                </p>
+                <ul class="demo__features">
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="currentColor" opacity="0.15"/><path d="M6 10L9 13L14 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Analiză predictivă cu AI
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="currentColor" opacity="0.15"/><path d="M6 10L9 13L14 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Rapoarte automate personalizate
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="currentColor" opacity="0.15"/><path d="M6 10L9 13L14 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Integrare cu +50 de platforme
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="currentColor" opacity="0.15"/><path d="M6 10L9 13L14 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Securitate de nivel enterprise
+                    </li>
+                </ul>
+                <a href="#contact" class="btn btn--primary" id="cta-demo-request">
+                    Solicită acces demo
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="demo__visual">
+                <div class="demo__screen">
+                    <div class="screen-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <img src="assets/images/dash1.png" alt="Dashboard Demo Nanoassist" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="services" id="servicii">
+        <div class="services__container">
+            <div class="services__header">
+                <span class="section-tag">Servicii</span>
+                <h2 class="section-title">Ce solutii implementam:</h2>
+                <p class="section-subtitle">Sistemele ce aduc cel mai mare ROI</p>
+            </div>
+
+            <div class="services__grid">
+                <div class="service-card" id="service-strategy">
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 4L28 10V22L16 28L4 22V10L16 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M16 16L28 10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 16L4 10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 16V28" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Strategie AI</h3>
+                    <p class="service-card__desc">Dezvoltăm strategii personalizate de implementare AI aliniate obiectivelor tale de business.</p>
+                    <a href="#contact" class="service-card__link">Află mai multe →</a>
+                </div>
+
+                <div class="service-card" id="service-automation">
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="4" y="4" width="10" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <rect x="18" y="4" width="10" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <rect x="4" y="18" width="10" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <rect x="18" y="18" width="10" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M14 9H18M9 14V18M23 14V18M14 23H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Automatizare Inteligentă</h3>
+                    <p class="service-card__desc">Automatizăm procese repetitive folosind modele de machine learning și NLP de ultimă generație.</p>
+                    <a href="#contact" class="service-card__link">Află mai multe →</a>
+                </div>
+
+                <div class="service-card" id="service-analytics">
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M4 24L11 17L17 21L28 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 8H28V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Analiză Avansată</h3>
+                    <p class="service-card__desc">Transformăm datele brute în insights acționabile cu ajutorul algoritmilor de deep learning.</p>
+                    <a href="#contact" class="service-card__link">Află mai multe →</a>
+                </div>
+
+                <div class="service-card" id="service-chatbots">
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M6 6H26V22H18L12 28V22H6V6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <circle cx="12" cy="14" r="1.5" fill="currentColor"/>
+                            <circle cx="16" cy="14" r="1.5" fill="currentColor"/>
+                            <circle cx="20" cy="14" r="1.5" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Chatboți & Asistenți AI</h3>
+                    <p class="service-card__desc">Construim asistenți virtuali inteligenți care îmbunătățesc experiența clienților tăi 24/7.</p>
+                    <a href="#contact" class="service-card__link">Află mai multe →</a>
+                </div>
+
+                <div class="service-card" id="service-integration">
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="4" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="6" cy="6" r="3" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="26" cy="6" r="3" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="6" cy="26" r="3" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="26" cy="26" r="3" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8.5 8.5L13 13M23.5 8.5L19 13M8.5 23.5L13 19M23.5 23.5L19 19" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Integrare & Deployment</h3>
+                    <p class="service-card__desc">Integrăm soluțiile AI cu infrastructura ta existentă, fără perturbări operaționale.</p>
+                    <a href="#contact" class="service-card__link">Află mai multe →</a>
+                </div>
+
+                <div class="service-card" id="service-training">
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 4L30 12L16 20L2 12L16 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M7 15V24L16 28L25 24V15" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M30 12V22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Training & Consultanță</h3>
+                    <p class="service-card__desc">Pregătim echipa ta cu workshop-uri și sesiuni de consultanță personalizate în domeniul AI.</p>
+                    <a href="#contact" class="service-card__link">Află mai multe →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS / VIDEO DEMOS ============ -->
+    <section class="testimonials" id="testimoniale">
+        <div class="testimonials__container">
+            <div class="testimonials__header">
+                <span class="section-tag">Testimoniale</span>
+                <h2 class="section-title">Ce spun clienții noștri</h2>
+            </div>
+        </div>
+
+        <!-- Full-width marquee strip -->
+        <div class="video-marquee__wrapper">
+            <div class="video-marquee__track">
+
+                <!-- Card 1 -->
+                <div class="video-card">
+                    <video class="video-card__video" muted loop playsinline preload="none"
+                        poster="assets/images/thumb-1.png">
+                        <source src="" type="video/mp4">
+                    </video>
+                    <div class="video-card__overlay">
+                        <button class="video-card__play" aria-label="Redă video">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path d="M7 4.5L18 11L7 17.5V4.5Z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                        <div class="video-card__meta">
+                            <span class="video-card__name">Andrei Marinescu</span>
+                            <span class="video-card__role">CEO, TechVision România</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="video-card">
+                    <video class="video-card__video" muted loop playsinline preload="none"
+                        poster="assets/images/thumb-2.png">
+                        <source src="" type="video/mp4">
+                    </video>
+                    <div class="video-card__overlay">
+                        <button class="video-card__play" aria-label="Redă video">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path d="M7 4.5L18 11L7 17.5V4.5Z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                        <div class="video-card__meta">
+                            <span class="video-card__name">Elena Popescu</span>
+                            <span class="video-card__role">COO, DataFlow Solutions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="video-card">
+                    <video class="video-card__video" muted loop playsinline preload="none"
+                        poster="assets/images/thumb-3.png">
+                        <source src="" type="video/mp4">
+                    </video>
+                    <div class="video-card__overlay">
+                        <button class="video-card__play" aria-label="Redă video">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path d="M7 4.5L18 11L7 17.5V4.5Z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                        <div class="video-card__meta">
+                            <span class="video-card__name">Mihai Rădulescu</span>
+                            <span class="video-card__role">CTO, NexGen Digital</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="video-card">
+                    <video class="video-card__video" muted loop playsinline preload="none"
+                        poster="assets/images/thumb-4.png">
+                        <source src="" type="video/mp4">
+                    </video>
+                    <div class="video-card__overlay">
+                        <button class="video-card__play" aria-label="Redă video">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path d="M7 4.5L18 11L7 17.5V4.5Z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                        <div class="video-card__meta">
+                            <span class="video-card__name">Ioana Constantin</span>
+                            <span class="video-card__role">Fondator, Quantiva Labs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="video-card">
+                    <video class="video-card__video" muted loop playsinline preload="none"
+                        poster="assets/images/thumb-5.png">
+                        <source src="" type="video/mp4">
+                    </video>
+                    <div class="video-card__overlay">
+                        <button class="video-card__play" aria-label="Redă video">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path d="M7 4.5L18 11L7 17.5V4.5Z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                        <div class="video-card__meta">
+                            <span class="video-card__name">Bogdan Ionescu</span>
+                            <span class="video-card__role">Director, Optimus Group</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Duplicate set for seamless loop -->
+                <div class="video-card">
+                    <video class="video-card__video" muted loop playsinline preload="none"
+                        poster="assets/images/thumb-1.png"><source src="" type="video/mp4"></video>
+                    <div class="video-card__overlay">
+                        <button class="video-card__play" aria-label="Redă video"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M7 4.5L18 11L7 17.5V4.5Z" fill="currentColor"/></svg></button>
+                        <div class="video-card__meta"><span class="video-card__name">Andrei Marinescu</span><span class="video-card__role">CEO, TechVision România</span></div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <video class="video-card__video" muted loop playsinline preload="none"
+                        poster="assets/images/thumb-2.png"><source src="" type="video/mp4"></video>
+                    <div class="video-card__overlay">
+                        <button class="video-card__play" aria-label="Redă video"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M7 4.5L18 11L7 17.5V4.5Z" fill="currentColor"/></svg></button>
+                        <div class="video-card__meta"><span class="video-card__name">Elena Popescu</span><span class="video-card__role">COO, DataFlow Solutions</span></div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <video class="video-card__video" muted loop playsinline preload="none"
+                        poster="assets/images/thumb-3.png"><source src="" type="video/mp4"></video>
+                    <div class="video-card__overlay">
+                        <button class="video-card__play" aria-label="Redă video"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M7 4.5L18 11L7 17.5V4.5Z" fill="currentColor"/></svg></button>
+                        <div class="video-card__meta"><span class="video-card__name">Mihai Rădulescu</span><span class="video-card__role">CTO, NexGen Digital</span></div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <video class="video-card__video" muted loop playsinline preload="none"
+                        poster="assets/images/thumb-4.png"><source src="" type="video/mp4"></video>
+                    <div class="video-card__overlay">
+                        <button class="video-card__play" aria-label="Redă video"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M7 4.5L18 11L7 17.5V4.5Z" fill="currentColor"/></svg></button>
+                        <div class="video-card__meta"><span class="video-card__name">Ioana Constantin</span><span class="video-card__role">Fondator, Quantiva Labs</span></div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <video class="video-card__video" muted loop playsinline preload="none"
+                        poster="assets/images/thumb-5.png"><source src="" type="video/mp4"></video>
+                    <div class="video-card__overlay">
+                        <button class="video-card__play" aria-label="Redă video"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M7 4.5L18 11L7 17.5V4.5Z" fill="currentColor"/></svg></button>
+                        <div class="video-card__meta"><span class="video-card__name">Bogdan Ionescu</span><span class="video-card__role">Director, Optimus Group</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq" id="faq">
+        <div class="faq__container">
+            <div class="faq__visual">
+                <img src="assets/images/legoone.png" alt="Nanoassist Blocks" loading="lazy">
+            </div>
+            <div class="faq__content">
+                <span class="section-tag section-tag--light">Întrebări frecvente</span>
+
+
+                <div class="faq__list">
+                    <div class="faq-item" id="faq-1">
+                        <button class="faq-item__question" aria-expanded="false">
+                            <span>Ce tipuri de afaceri pot beneficia de serviciile Nanoassist?</span>
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 7L16 7L10 14Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>Serviciile noastre sunt adaptate pentru companii de orice dimensiune — de la startup-uri inovatoare la corporații multinaționale. Oferim soluții personalizate pentru industrii precum fintech, retail, sănătate, logistică și producție.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" id="faq-2">
+                        <button class="faq-item__question" aria-expanded="false">
+                            <span>Cât durează implementarea unei soluții AI?</span>
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 7L16 7L10 14Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>Durata variază în funcție de complexitatea proiectului. Un proiect tipic de automatizare poate fi livrat în 4-8 săptămâni, în timp ce soluțiile enterprise complexe pot necesita 3-6 luni. Oferim un timeline detaliat după analiza inițială.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" id="faq-3">
+                        <button class="faq-item__question" aria-expanded="false">
+                            <span>Pot accesa o versiune demo gratuită?</span>
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 7L16 7L10 14Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>Sigur ca da. Programeaza un apel de consultanta si iti vom arata cum ar putea functiona sistemul si pentru afacerea ta</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" id="faq-4">
+                        <button class="faq-item__question" aria-expanded="false">
+                            <span>Cum asigurați securitatea datelor noastre?</span>
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 7L16 7L10 14Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>Securitatea este prioritatea noastră #1. Folosim criptare end-to-end, respectăm standardele GDPR, SOC 2 și ISO 27001. Toate datele sunt stocate în centre de date certificate și sunt supuse audit-urilor regulate de securitate.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" id="faq-5">
+                        <button class="faq-item__question" aria-expanded="false">
+                            <span>Oferiți suport post-implementare?</span>
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 7L16 7L10 14Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>Absolut. Toate pachetele noastre includ suport tehnic dedicat post-implementare. Echipa noastră monitorizează performanța soluțiilor și oferă optimizări continue pentru a asigura rezultate maxime.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+        <div class="contact__container">
+            <div class="contact__info">
+                <h2 class="contact__heading">Ai întrebări?<br><em>Hai să discutăm.</em></h2>
+            </div>
+
+            <form class="contact__form" id="contact-form" novalidate>
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Nume" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="telefon" name="telefon" placeholder="Telefon" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="4" placeholder="Mesajul tau"></textarea>
+                </div>
+                <div class="form-group form-group--checkbox">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="privacy-consent" name="privacy-consent" required>
+                        <span class="checkbox-text">Sunt de acord cu <a href="politica.html" target="_blank">politica de confidențialitate</a></span>
+                    </label>
+                </div>
+                <div class="contact__submit-wrapper">
+                    <button type="submit" class="btn btn--glow-pill" id="submit-form">
+                        <span>Send Message</span>
+                        <span class="audit-btn__circle">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M3.33331 8H12.6666M12.6666 8L8.66665 4M12.6666 8L8.66665 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" id="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="#" class="header__logo">
+                        <img src="assets/images/logo1.png" alt="Nanoassist Logo" class="header-logo-img">
+                        <span class="logo-text">Nanoassist</span>
+                    </a>
+                    <p class="footer__tagline">Consultanță AI de nouă generație.<br>Transformăm afaceri cu inteligență artificială.</p>
+                </div>
+
+                <div class="footer__links">
+                    <div class="footer__col">
+                        <h4>Companie</h4>
+                        <a href="#despre">Despre noi</a>
+                        <a href="#servicii">Servicii</a>
+                        <a href="#rezultate">Rezultate</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4>Legal</h4>
+                        <a href="termeni.html">Termeni și condiții</a>
+                        <a href="politica.html">Politica de confidențialitate</a>
+                        <a href="#">GDPR</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>© 2026 Nanoassist. Toate drepturile rezervate.</p>
+                <div class="footer__social">
+                    <a href="#" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4.5 8.5V16M8 16V11.5C8 10.1193 9.11929 9 10.5 9C11.8807 9 13 10.1193 13 11.5V16M8 8.5V16M4.75 6C5.16421 6 5.5 5.66421 5.5 5.25C5.5 4.83579 5.16421 4.5 4.75 4.5C4.33579 4.5 4 4.83579 4 5.25C4 5.66421 4.33579 6 4.75 6Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 16.5L8.5 11M8.5 11L3 3.5H7L11.5 9M8.5 11L11.5 9M11.5 9L17 3.5M13 16.5H17L11.5 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M12 3.5H14V7H12C11.4477 7 11 7.44772 11 8V10H14L13.5 13H11V17H8V13H6V10H8V7.5C8 5.29086 9.79086 3.5 12 3.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__massive-text">Nanoassist</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
