@@ -1279,7 +1279,7 @@ ul {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 150px;
+    width: 75px;
     z-index: 2;
     pointer-events: none;
 }
