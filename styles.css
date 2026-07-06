@@ -838,7 +838,7 @@ ul {
    STATS SECTION
    =================================================================== */
 .stats {
-    padding: 60px 0 120px 0;
+    padding: 30px 0 120px 0;
     background: var(--color-bg);
 }
 
@@ -850,7 +850,7 @@ ul {
 
 .stats__header {
     text-align: center;
-    margin-bottom: 64px;
+    margin-bottom: 32px;
 }
 
 .stats__grid {
